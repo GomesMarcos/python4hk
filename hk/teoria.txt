@@ -1,0 +1,17 @@
+Funções de Baixo Níxel:
+    sr() = Enviar e receber pacotes na camada 3(rede);
+    sr1() = Enviar pacotes na camada de rede e receber apenas a primeira resposta;
+    srp() = Enviar e receber pacotes na camada de enlaxe;
+    srp1() = Enviar pacotes na camada de enlaxe e receber apenas a primeira resposta;
+    srloop() Enviar pacotes na camada 3 em um loop e imprimir as saídas;
+    srploop() = Enviar pacotes na camada 2 em um loop e imprimir as saídas;
+    sniff() = Captura pacotes;
+    send() = Enviar pacotes na camada 3;
+    sendp() = Enviar pacotes na camada 2;
+    ls() = Lista as camadas suportadas pelo Scapy;
+    ls(x) = Mostra as características de uma determinada camada x;
+    lsc() = Mostra todas as funções presentes no Scapy;
+    lsc(x) = Mostra os parâmetros da função x;
+    conf() = Mostra todos os parâmetros iniciais predefinidos.
+
+Funções de Alto Nível: 

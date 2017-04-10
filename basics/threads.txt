@@ -1,0 +1,27 @@
+Processo = Tarefas em Execução;
+Todo Processo possui, ao menos, 1 Thread;
+Processos Monothread contem apenas uma thread.
+Processo Multithread: possui partes diferentes de seu código sendo executadas em paralelo,
+aplicações concorrendo eficientemente,
+Uma Thread se comporta de forma semelhante a um processo.
+Em multythread pode-se ter várias threads rodando em um único Processo, 
+   diminuindo a sobrecarga de utilizar vários Processos.
+Várias Threads trabalham numa mesma tarefa
+Isso tem um custo.
+
+Ambiente Monothread suporta apenas uma thread:
+    Cada processo possui seu próprio contexto de hardware, softwrare e espaço de endereçamento;
+    Cada processo possui seu Próprio Espaço de Endereçamento = Comunicação Difícil e Lenta.
+
+Em Multithread: 
+   Cada Processo pode possuir vários fluxos de execução (Threads);
+   Várias Threads compartilham o mesmo Espaço de Endereçamento;
+   Isso permite a execução de várias tarefas ao mesmo tempo, servindo ao mesmo propósito;
+   Mininiza a alocação de recursos; 
+   Diminui Overhead na criação, troca e eliminação de Processos.
+Threads garantem: Melhor performance, simplicidade, compartilhamento de memória e portabilidade.
+
+Para se trabalhar com Threads é necessário importar o módulo '_thread':
+    import _thread --> esse módulo é para operações mais 'primitivas';
+    Há, também, o módulo threading, voltado para execuções em objetos, interface mais alto nível;
+    O módulo '_thread' funciona como interface para implementação de 'threading';
